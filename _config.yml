@@ -1,0 +1,4 @@
+name: eiriksm.github.io
+markdown: redcarpet
+pygments: true
+port: 4001

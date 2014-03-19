@@ -17,6 +17,7 @@ html, body {
 body {
   background-color: #FFF;
   font: 18px Helvetica, Arial, sans-serif;
+  color: #111;
 }
 
 h1 { margin-bottom: 1em; }
@@ -33,7 +34,23 @@ span.date {
   padding: 5px;
 }
 .content {
-  width: 90%;
-  padding: 10px;
+  width: 98%;
+  margin: 1%;
+  padding: 1%;
   margin: 0 auto;
+}
+a {
+  text-decoration: none;
+  color: #111;
+}
+.postlink {
+  padding: 5%;
+  display: block;
+  background: #eee;
+}
+.postlink:hover {
+  background-color: #A7D6EB;
+  transition: background-color .3s ease-in-out;
+  -webkit-transition: background-color .3s ease-in-out;
+  border-color: transparent !important;
 }

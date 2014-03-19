@@ -12,10 +12,10 @@ And being awesome with syntax highlighting. Paste this into your console to see 
 {% highlight javascript %}
 (function(b,q) {
   var a,c={};
-  try{
+  try {
     k
   }
-  catch(e){
+  catch(e) {
     a=(e+"");c[b]=(a+"")[(parseInt(b)-b)*0+16];
   };
   return (((!!+44!==true)+"")[4]+(a[1*11+7]+"")+((!('!'==!true)+"")[1^123*0])+""+((a[9^9-80+17]+"")[5])+c[b]+q)

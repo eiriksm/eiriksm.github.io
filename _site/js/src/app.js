@@ -1,3 +1,4 @@
+var c = document.getElementById('content');
 var list = {
   controller: function() {
     this.list = [];
@@ -6,11 +7,10 @@ var list = {
     }
   },
   view: function(ctrl) {
-    document.body.innerHTML = '';
-    m.render(document.body, [
+    c.innerHTML = '';
+    m.render(c, [
       m('div.content', [
         ctrl.list.map(function(post, index) {
-          post.url = post.url.replace('/jekyll/update/', '/post/');
           return m('div.post', [
             m('h3', [
               m('a[href="' + post.url + '"].postlink', {config: m.route}, [
@@ -34,7 +34,7 @@ var post = {
     var ctrl = this;
     m.request({
       method: 'GET',
-      url: '/jekyll/update/' + this.year + '/' + this.month + '/' + this.day + '/' + this.file,
+      url: '/blog/' + this.year + '/' + this.month + '/' + this.day + '/' + this.file + '/index.html',
       deserialize: function(v) {
         return v;
       }
@@ -44,8 +44,8 @@ var post = {
     });
   },
   view: function(ctrl) {
-    document.body.innerHTML = '';
-    m.render(document.body, [
+    c.innerHTML = '';
+    m.render(c, [
       m('div.content', [
         m('div.post-full', m.trust(ctrl.text))
       ])
@@ -53,7 +53,7 @@ var post = {
   }
 };
 m.route.mode = 'hash';
-m.route(document.body, "/home", {
+m.route(c, "/home", {
   "/home": list,
-  '/post/:year/:month/:day/:file': post
+  '/blog/:year/:month/:day/:file': post
 });

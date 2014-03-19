@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Testing jekyll!"
+title:  "Testing kyll-thrill!"
 date:   2014-03-17 19:06:04
-categories: jekyll update
+categories: kyll-thrill update
 ---
 
 Testing this stuff.

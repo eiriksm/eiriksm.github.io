@@ -1,0 +1,30 @@
+{
+  "name": "eiriksm.github.io",
+  "version": "0.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/eiriksm/eiriksm.github.io.git"
+  },
+  "author": "Eirik S. Morland <eirik@morland.no>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eiriksm/eiriksm.github.io/issues"
+  },
+  "homepage": "https://github.com/eiriksm/eiriksm.github.io",
+  "devDependencies": {
+    "gulp": "^3.5.6",
+    "gulp-concat": "^2.2.0",
+    "jshint": "^2.4.4",
+    "gulp-jshint": "^1.5.0",
+    "gulp-uglify": "^0.2.1",
+    "gulp-util": "^2.2.14",
+    "gulp-minify-css": "^0.3.0",
+    "gulp-smoosher": "0.0.2",
+    "gulp-clean": "^0.2.4"
+  }
+}

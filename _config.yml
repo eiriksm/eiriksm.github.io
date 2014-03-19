@@ -2,3 +2,4 @@ name: eiriksm.github.io
 markdown: redcarpet
 pygments: true
 port: 4001
+permalink: "/blog/:year/:month/:day/:title"

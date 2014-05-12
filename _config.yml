@@ -11,6 +11,10 @@ baseurl: ""
 # Use this for google analytics.
 ga_id: UA-50896190-1
 
+# Used for the RSS feed. Edit to suit your needs.
+description: eiriksm.github.io
+url: https://eiriksm.github.io
+
 # Use this for disqus
 # disqus_shortname: myshortname
 

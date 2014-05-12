@@ -1,0 +1,89 @@
+@import "variables";
+
+/*****************************************************************************/
+/*
+/* Common
+/*
+/*****************************************************************************/
+
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+img {
+  max-width: 100%;
+}
+
+body {
+  background-color: #FFF;
+  font: 18px Helvetica, Arial, sans-serif;
+  color: #111;
+}
+
+h1 {
+  margin-bottom: 1em;
+}
+p {
+  margin: 1em 0;
+}
+.highlight {
+  background: #ddd;
+  padding: 5px;
+}
+#content {
+  padding: 3% 0;
+}
+.content {
+  width: 98%;
+  margin: 0 1%;
+  margin: 0 auto;
+}
+a:active,
+a:visited,
+a {
+  text-decoration: none;
+  color: $black;
+  border-bottom: 1px $secondary solid;
+}
+.post {
+  padding: 1%;
+  margin: 2%;
+  transition: background-color .25s ease-in-out;
+  -webkit-transition: background-color .25s ease-in-out;
+  border-radius: 5px;
+  &:hover {
+    background-color: lighten($secondary, 20%);
+  }
+}
+.date {
+  color: $grey;
+  font-size: .8rem;
+}
+.postlink {
+  display: block;
+  border: none;
+  color: $black;
+}
+
+footer {
+  margin: 3% 1%;
+  padding: 1% 5%;
+  text-align: center;
+}
+header {
+  text-align: center;
+}
+h1.site-title a {
+  color: $primary;
+  -webkit-transition: font-size .25s ease-in-out;
+  transition: color .25s ease-in-out;
+  height: 160px;
+  &:hover {
+    color: $black;
+  }
+}

@@ -7,7 +7,9 @@
 {% if site.env == 'development' %}
   <script src="{{site.baseurl}}/js/posts.js"></script>
 {% else %}
-  <script>if("undefined"==typeof c){if(window&&window.localStorage&&localStorage.setItem("redirect",window.location.pathname),"undefined"==typeof baseUrl||""===baseUrl)var baseUrl="/";window.location.href=baseUrl}</script>
+  <!-- smoosh -->
+  <script src="../../../build/posts.min.js"></script>
+  <!-- endsmoosh -->
 {% endif %}
 {% if site.disqus_shortname %}
   <div id="disqus_thread"></div>

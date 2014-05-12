@@ -1,5 +1,18 @@
-name: eiriksm.github.io
+name: kyll-thrill
 markdown: redcarpet
 pygments: true
 port: 4001
+title: eiriksm
 permalink: "/blog/:year/:month/:day/:title"
+exclude: [node_modules]
+# You might want to change this if you are running on another base URL.
+baseurl: /
+
+# Use this for google analytics.
+ga_id: UA-50896190-1
+
+# Use this for disqus
+# disqus_shortname: myshortname
+
+# Select a theme. Default: 'thrill'
+theme: thrill

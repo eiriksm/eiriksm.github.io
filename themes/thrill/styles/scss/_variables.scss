@@ -1,0 +1,15 @@
+$primary: #004358;
+$secondary: #1F8A70;
+$black: #2A2C2B;
+$danger: #FD7400;
+$warning: #BEDB39;
+$off-white: #FFFAE7;
+
+%button {
+  background: #3498db;
+  color: #f6f6f6!important;
+  text-shadow: 0 1px 0 #3498db;
+  box-shadow: 0 .25em 0 0 #2077b2;
+  border-radius: 5px;
+  padding: 10px;
+}

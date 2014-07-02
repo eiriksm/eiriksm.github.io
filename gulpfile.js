@@ -3,7 +3,7 @@ var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var minifyCSS = require('gulp-minify-css');
 var smoosher = require('gulp-smoosher');
-var clean = require('gulp-clean');
+var rimraf = require('gulp-rimraf');
 var sass = require('gulp-sass');
 var prefix = require('gulp-autoprefixer');
 var theme;
@@ -69,7 +69,7 @@ gulp.task('inline', function() {
 
 gulp.task('clean', function() {
   return gulp.src(['js/build', 'css/build'], {read: false})
-    .pipe(clean());
+    .pipe(rimraf());
 });
 
 // Watch

@@ -4,7 +4,7 @@ pygments: true
 port: 4001
 title: eiriksm
 permalink: "/blog/:year/:month/:day/:title"
-exclude: [node_modules]
+exclude: [node_modules, test, coverage, Makefile]
 # You might want to change this if you are running on another base URL.
 baseurl: ""
 
@@ -32,7 +32,16 @@ prose:
     - /_includes
   metadata:
     _posts:
+      - name: "published"
+        field:
+          label: "Published"
+          element: "checkbox"
+          value: "true"
       - name: "layout"
         field:
           element: "hidden"
           value: "post"
+      - name: "title"
+        field:
+          label: "Title"
+          element: "text"
